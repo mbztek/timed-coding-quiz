@@ -49,6 +49,23 @@ update() {
     }
 }
 
+start() {
+    this.update();
+
+    const intervalId = setInterval(() => {  
+        this.timeRemaining -= 1000;
+
+        if (this.timeRemaining < 0) {
+            complete();
+
+            clearInterval(intervalId);
+        } else {
+            this.update();
+        }
+
+    }, 1000);
+}
+
 
 
 

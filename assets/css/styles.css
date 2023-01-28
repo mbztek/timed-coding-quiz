@@ -1,15 +1,54 @@
-body {
-    text-align: center;
-    padding: 100px 60px;
-    background: #90cbf3;
-    font-family: sans-serif;
-    font-weight: lighter;
+Body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 150%;
+  background-color: lightskyblue;
+  align-items: center;
 }
-.class CountDown {
-    constructor(expiredDate, onRender, onComplete) {
-        this.onRender = onRender;
-        this.onComplete = onComplete;
-        // handle the expired Date
-        ..
-    }
+
+
+.score {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
 }
+
+.timer {
+  position: absolute
+  top: 10px;
+  right: 2px;
+}
+
+.Header {
+  Padding: 30px;
+  font-size: large;
+}
+
+
+.Main {
+  Display: Flex;
+  Justify-Content: Center;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  font-size: 15px;
+  padding: 3px 15px;
+  margin: 100px;
+  background-color: navy;
+  color: azure;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+}
+
+.begin {
+  align-items: center;
+}
+
+
+
